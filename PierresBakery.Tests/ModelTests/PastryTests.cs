@@ -26,5 +26,15 @@ namespace PierresBakery.Tests {
       // assert
       Assert.AreEqual(4, order);
     }
+    [TestMethod]
+    public void GetPrice_ReturnsPrice_Int() { 
+      // arrange
+      int quantity = 4;
+      Pastry pastry = new Pastry(quantity);
+      // act
+      int order = pastry.Quantity;
+      // assert
+      Assert.AreEqual(7, pastry.GetPrice(quantity));
+    }
   }
 }

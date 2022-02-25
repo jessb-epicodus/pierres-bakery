@@ -6,9 +6,12 @@ using System;
 
 namespace PierresBakery.Models { 
   public class Pastry { 
-    public int Quantity { get; }
+    public int Quantity { get; set; }
     public Pastry(int quantity) {
       Quantity = quantity;
+    }
+    public int GetPrice(int quantity) {
+      return 0;
     }
   }
 }
