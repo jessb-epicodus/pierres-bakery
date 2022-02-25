@@ -14,17 +14,18 @@ namespace PierresBakery.Tests {
     [TestMethod]
     public void NewBread_CreateInstanceOfBread_Bread() { 
       // arrange
-      Bread newBread = new Bread();
+      Bread bread = new Bread();
       // assert
-      Assert.AreEqual(typeof(Bread), newBread.GetType());
+      Assert.AreEqual(typeof(Bread), bread.GetType());
     }
-        [TestMethod]
-    public void GetOrder_ReturnsOrder_Int() { 
+    [TestMethod]
+    public void GetQuantity_ReturnsQuantity_Quantity() { 
       // arrange
-      int order = 1;
-      Bread newBread = new Bread(order);
+      string stringQuantity = "1";
+      int quantity = int.Parse(stringQuantity);
+      Bread bread = new Bread();
       // act
-      int result = newBread.Bread;
+      int order = bread.Quantity;
       // assert
       Assert.AreEqual(order, 1);
     }
