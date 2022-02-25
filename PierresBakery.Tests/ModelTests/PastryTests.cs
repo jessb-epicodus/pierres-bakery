@@ -6,7 +6,7 @@
 //   [TestClass]
 //   public class PastryTests {
 //     [TestMethod]
-//     NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue() {
+//     public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue() {
 //       // arrange: gather, declare and create all necessary components for the test
 //       Pastry testPastry = new Pastry();
 //       // act: invoke the functionality we're testing, often by calling a method or retrieving a property

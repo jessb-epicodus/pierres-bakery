@@ -19,7 +19,7 @@ This is a C# console application for a bakery.  When the user runs the applicati
 * Go to _https://github.com/jessb-epicodus/pierres-bakery.git_
 * Cone this repository to your desktop (or other desired location)
 * Navigate to the top level of the directory called _PierresBakery.Solution_
-* In your terminal, enter *dotnet restore* to add the required dependencies and tools for this project
+* In your terminal, enter *dotnet restore PierresBakery* to add the required dependencies and tools for this project
 * In your terminal, enter *dotnet test PierresBakery.Tests* to run tests 
 * In your terminal, enter *cd PierresBakery* then run *dotnet run* to enter the bakery console app as a user and follow the prompts
 * _This is not yet published._
