@@ -1,9 +1,6 @@
 using System.Collections.Generic;
 using System;
 
-//// single loaf costs $5
-//// buy 2, get 1 free
-
 namespace PierresBakery.Models {
   public class Bread { 
     public int Quantity { get; set; }

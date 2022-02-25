@@ -2,10 +2,6 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 // using System.Collections.Generic; 
 using PierresBakery.Models; 
 
-// create instance of bread X
-// add quanttiy to order X
-// price bread order X
-
 namespace PierresBakery.Tests {
   [TestClass]
   public class BreadTests {

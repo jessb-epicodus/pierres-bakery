@@ -1,9 +1,6 @@
 using System.Collections.Generic;
 using System;
 
-//// single for $2
-//// 3 for $5
-
 namespace PierresBakery.Models { 
   public class Pastry { 
     public int Quantity { get; set; }
