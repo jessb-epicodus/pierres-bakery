@@ -1,14 +1,14 @@
-// using System.Collections.Generic;
+using System.Collections.Generic;
+using System;
 
-//// Bread: Buy 2, get 1 free (every 3rd loaf of bread is free.). A single loaf costs $5, two loaves costs $10, and three loaves cost $10
+//// single loaf costs $5, two loaves costs $10, and three loaves cost $10
+//// Bread: Buy 2, get 1 free
 
 namespace PierresBakery.Models {
   public class Bread { 
-    public int Quantity { get; set; }
-    public Bread (int quantity) {
-      public interface GetQuantity() {
-        return Quantity;
-      }
+    public string AddBread { get; }
+    public Bread (string addBread) {
+      AddBread = addBread;
     }
   }
 }
