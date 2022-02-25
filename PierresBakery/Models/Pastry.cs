@@ -3,7 +3,6 @@ using System;
 
 //// 1 for $2 or 3 for $5
 
-
 namespace PierresBakery.Models { 
   public class Pastry { 
     public int Quantity { get; set; }
@@ -11,7 +10,16 @@ namespace PierresBakery.Models {
       Quantity = quantity;
     }
     public int GetPrice(int quantity) {
-      return 0;
+      int price = 0;
+      for (int i = 1 ; i <= quantity; i++) {
+        if (!(i % 3 == 0)) {
+          price = price + 2;          
+        }
+        else if (i % 3 == 0) {
+          price = price + 1;
+        }
+      }
+      return price;
     }
   }
 }

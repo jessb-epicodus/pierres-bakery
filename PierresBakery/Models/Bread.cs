@@ -14,7 +14,7 @@ namespace PierresBakery.Models {
       int price = 0;
       for (int i = 1 ; i <= quantity; i++) {
         if (!(i % 3 == 0)) {
-        price = price + 5;          
+          price = price + 5;          
         }
         else if (i % 3 == 0) {
           price = price + 0;
