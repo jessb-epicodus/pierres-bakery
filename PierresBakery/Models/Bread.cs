@@ -6,9 +6,7 @@ using System;
 
 namespace PierresBakery.Models {
   public class Bread { 
-    public string AddBread { get; }
-    public Bread (string addBread) {
-      AddBread = addBread;
-    }
+    // public int Quantity;
+    // public int Price;
   }
 }

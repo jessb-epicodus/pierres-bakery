@@ -19,26 +19,5 @@ namespace PierresBakery.Tests {
       // assert
       Assert.AreEqual(typeof(Bread), bread.GetType());
     }
-    [TestMethod]
-    public void AddBread_ReturnsBread_String() { 
-      // arrange
-      string addBread = "bread";
-      Bread bread = new Bread(addBread);
-      // act
-      string order = bread.AddBread;
-      // assert
-      Assert.AreEqual(addBread, order);
-    }
-    // [TestMethod]
-    // public void GetQuantity_ReturnsQuantity_Quantity() { 
-    //   // arrange
-    //   string stringQuantity = "1";
-    //   int quantity = int.Parse(stringQuantity);
-    //   Bread bread = new Bread();
-    //   // act
-    //   int order = bread.Quantity;
-    //   // assert
-    //   Assert.AreEqual(order, 1);
-    // }
   }
 }
