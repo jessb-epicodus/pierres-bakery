@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System;
 
-//// single loaf costs $5, two loaves costs $10, and three loaves cost $10
+//// single loaf costs $5
 //// buy 2, get 1 free
 
 namespace PierresBakery.Models {

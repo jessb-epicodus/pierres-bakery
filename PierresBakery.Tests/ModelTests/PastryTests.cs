@@ -3,8 +3,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PierresBakery.Models;
 
 // create instance of pastry X
-// add quanttiy to order
-// price bread order
+// add quanttiy to order X
+// price bread order X
 
 namespace PierresBakery.Tests {
   [TestClass]

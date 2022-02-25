@@ -1,7 +1,8 @@
 using System.Collections.Generic;
 using System;
 
-//// 1 for $2 or 3 for $5
+//// single for $2
+//// 3 for $5
 
 namespace PierresBakery.Models { 
   public class Pastry { 
