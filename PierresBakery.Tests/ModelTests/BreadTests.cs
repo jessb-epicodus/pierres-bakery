@@ -3,8 +3,10 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PierresBakery.Models; 
 
 // create instance of bread
-// get bread order
+// add bread to order
 // calculate bread order
+// display order
+// confirm/submit oder
 
 namespace PierresBakery.Tests {
   [TestClass]
@@ -15,6 +17,16 @@ namespace PierresBakery.Tests {
       Bread newBread = new Bread();
       // assert
       Assert.AreEqual(typeof(Bread), newBread.GetType());
+    }
+        [TestMethod]
+    public void GetOrder_ReturnsOrder_Int() { 
+      // arrange
+      int order = 1;
+      Bread newBread = new Bread(order);
+      // act
+      int result = newBread.Bread;
+      // assert
+      Assert.AreEqual(order, 1);
     }
   }
 }
