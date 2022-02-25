@@ -21,6 +21,7 @@ This is a C# console application for a bakery.  When the user runs the applicati
 * Navigate to the top level of the directory called _PierresBakery.Solution_
 * In your terminal, enter *dotnet restore* to add the required dependencies and tools for this project
 * In your terminal, enter *dotnet test PierresBakery.Tests* to run tests 
+* In your terminal, enter *cd PierresBakery* then run *dotnet run* to enter the bakery console app as a user and follow the prompts
 * _This is not yet published._
 
 ## Known Bugs
