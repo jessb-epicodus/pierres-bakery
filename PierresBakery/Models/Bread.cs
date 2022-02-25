@@ -1,11 +1,9 @@
-// using System.Collections.Generic; //  for static methods;  needs static variable & declared instance. Both variables and methods dealing with entire classes must be static.  static method is called on the class itself, not on an instance of the class
+// using System.Collections.Generic;
 
-namespace PierresBakery.Models {  //  place logic in the namespace.
-  public class Bread {  //  create a class that contains the method & expected return
-    // properties, methods, etc.
-    public datatype FunctionName(datatype variable) {
-      // logic 
-      return expectedoutcome;  //  identify a behavior and write a corresponding test before adding any application logic. EX: return false as a placeholder so the application can compile properly. If our method returned nothing, we'd receive errors because the method has expected return withcorresponding with the datatype.
-    }
+//// Bread: Buy 2, get 1 free (every 3rd loaf of bread is free.). A single loaf costs $5, two loaves costs $10, and three loaves cost $10
+
+namespace PierresBakery.Models {
+  public class Bread { 
+
   }
 }
