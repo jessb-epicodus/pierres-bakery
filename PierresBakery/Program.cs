@@ -16,8 +16,6 @@ class Program {
     Console.WriteLine ("Welcome to Pierre's Bakery!");
     Console.WriteLine ("Bread: $5/ea | Buy 2 Get 1 FREE");
     Console.WriteLine ("Pastries: $2/ea | Buy 2 Get One 50% Off!");
-    List<Bread> BreadOrder = new List<Bread> {};
-    List<Pastry> PastryOrder = new List<Pastry> {};
     bool done = false;
     while (done == false) {
       Console.WriteLine("Please chooose from the menu (Bread/Pastry/View Order)");
@@ -26,13 +24,20 @@ class Program {
         Console.WriteLine("How many loaves would you like?");
         string stringQuanity = Console.ReadLine();
         int quantity = int.Parse(stringQuanity);
-        Bread addBread = new Bread(quantity);
-        BreadOrder.Add(addBread);
-      } else if (userInput == "VIEW" || userInput == "VIEW ORDER") {
-        Console.WriteLine( quantity + "Bread: $" + breadtotal);
-        Console.WriteLine( quantity + "Pastry: $" + pastrytotal);
-        Console.WriteLine( "  Total: $" + ordertotal);
-        // Console.WriteLine( "Would you like to modify your order? (Yes / No");
+        Bread bread = new Bread(quantity);
+        Console.WriteLine(quantity + "x Bread: $" + bread.GetPrice(quantity));
+      } else if (userInput == "PASTRY") {
+        Console.WriteLine("How many pastries would you like?");
+        string stringQuanity = Console.ReadLine();
+        int quantity = int.Parse(stringQuanity);
+        Pastry pastry = new Pastry(quantity);
+        Console.WriteLine(quantity + "x Pastry: $" + pastry.GetPrice(quantity));
+      // } else if (userInput == "VIEW" || userInput == "VIEW ORDER") {
+      //   Console.WriteLine( Bread(quantity) + "Bread: $" + bread.GetPrice(quantity) );
+      //   Console.WriteLine( Pastry(quantity) + "Pastry: $" + pastry.GetPrice(quantity) );
+      //   Console.WriteLine( "  Total: $" + ordertotal);
+      //   // Console.WriteLine( "Would you like to modify your order? (Yes / No");
+      // }
       }
     }
   }
