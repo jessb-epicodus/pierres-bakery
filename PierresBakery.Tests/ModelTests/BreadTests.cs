@@ -29,12 +29,12 @@ namespace PierresBakery.Tests {
     [TestMethod]
     public void GetPrice_ReturnsPrice_Int() { 
       // arrange
-      int quantity = 4;
+      int quantity = 3;
       Bread bread = new Bread(quantity);
       // act
       int order = bread.Quantity;
       // assert
-      Assert.AreEqual(15, bread.GetPrice(4));
+      Assert.AreEqual(10, bread.GetPrice(3));
     }
   }
 }

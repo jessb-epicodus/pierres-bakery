@@ -11,7 +11,16 @@ namespace PierresBakery.Models {
       Quantity = quantity;
     }
     public int GetPrice(int quantity) {
-      return 0;
+      int price = 0;
+      for (int i = 1 ; i < quantity; i++) {
+        if (!(i % 3 == 0)) {
+        price = price + 5;          
+        }
+        else if (i % 3 == 0) {
+          price = price + 0;
+        }
+      }
+      return price;
     }
   }
 }
