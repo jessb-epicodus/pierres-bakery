@@ -2,8 +2,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 // using System.Collections.Generic; 
 using PierresBakery.Models; 
 
-// create instance of bread
-// add quanttiy to order
+// create instance of bread X
+// add quanttiy to order X
 // price bread order
 
 namespace PierresBakery.Tests {
@@ -25,6 +25,16 @@ namespace PierresBakery.Tests {
       int order = bread.Quantity;
       // assert
       Assert.AreEqual(4, order);
+    }
+    [TestMethod]
+    public void GetPrice_ReturnsPrice_Int() { 
+      // arrange
+      int quantity = 4;
+      Bread bread = new Bread(quantity);
+      // act
+      int order = bread.Quantity;
+      // assert
+      Assert.AreEqual(15, bread.GetPrice(4));
     }
   }
 }
