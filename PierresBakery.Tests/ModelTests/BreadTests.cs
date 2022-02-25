@@ -4,7 +4,7 @@ using PierresBakery.Models;
 
 // create instance of bread X
 // add quanttiy to order X
-// price bread order
+// price bread order X
 
 namespace PierresBakery.Tests {
   [TestClass]
