@@ -3,11 +3,15 @@ using System;
 using PierresBakery.Models;
 
 class Program {
+  class Order : Bread, Pastry {
+    Bread obj1 = new Bread();
+    Pastry obj2 = new Pastry();
+}
   public static void Main() {
+
     Console.WriteLine ("Welcome to Pierre's Bakery!");
     Console.WriteLine ("Bread: $5/ea | Buy 2 Get 1 FREE");
     Console.WriteLine ("Pastries: $2/ea | Buy 2 Get One 50% Off!");
-  Dictionary<string, int> bakeryOrder = new Dictionary<string, int>();
     bool done = false;
     while (done == false) {
       Console.WriteLine("Chooose from the menu (Bread/Pastry/View Order)");
@@ -28,6 +32,7 @@ class Program {
         foreach (Item element in Order) {
         Console.WriteLine(element.GetQuantity);
         Console.WriteLine("$" + element.GetPrice);
+        }
       }
     }
   }
