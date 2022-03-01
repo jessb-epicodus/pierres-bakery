@@ -26,7 +26,7 @@ This is a C# console application for a bakery.  When the user runs the applicati
 
 ## Known Bugs
 
-* No known issues
+* Does not respond correctly if user does not confirm (Y) or modify (N) order
 
 ## License
 
