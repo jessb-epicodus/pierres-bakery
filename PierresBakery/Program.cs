@@ -31,6 +31,8 @@ class Program {
         Console.WriteLine("Thank you! Enjoy :)");
       } else if (userInput == "N") {
         // loop back re-enter loaves and pastries
+      } else if (!(userInput == "Y") || !(userInput == "N")) {
+        Console.WriteLine("!! Please confirm your order !!");
       }
     }
   }
