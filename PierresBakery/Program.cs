@@ -2,37 +2,35 @@ using System.Collections.Generic;
 using System;
 using PierresBakery.Models;
 
-class Program {
-  class Order : Bread, Pastry {
-    Bread obj1 = new Bread();
-    Pastry obj2 = new Pastry();
-}
+class Program {  
   public static void Main() {
-
-    Console.WriteLine ("Welcome to Pierre's Bakery!");
-    Console.WriteLine ("Bread: $5/ea | Buy 2 Get 1 FREE");
-    Console.WriteLine ("Pastries: $2/ea | Buy 2 Get One 50% Off!");
+    Console.WriteLine ("      Welcome to Pierre's Bakery");
+    Console.WriteLine ("    Bread: $5/ea | Buy 2 Get 1 FREE");
+    Console.WriteLine (" Pastries: $2/ea | Buy 2 Get 1 50% Off");
+    Console.WriteLine("--- -- - -- --- -- - -- --- -- - -- ---");
     bool done = false;
     while (done == false) {
-      Console.WriteLine("Chooose from the menu (Bread/Pastry/View Order)");
+      Console.WriteLine("How many loaves of bread would you like?");
+      string stringLoaves = Console.ReadLine();
+      int loaves = int.Parse(stringLoaves);
+      Bread bread = new Bread(loaves);
+      Console.WriteLine("How many pastries would you like?");
+      string stringQuantity = Console.ReadLine();
+      int quantity = int.Parse(stringQuantity);
+      Pastry pastry = new Pastry(quantity);
+      Console.WriteLine("--- -- - -- --- -- - -- --- -- - -- ---");
+      Console.WriteLine("Your order:");
+      Console.WriteLine(loaves + "x Bread: $" + bread.GetPrice(loaves));
+      Console.WriteLine(quantity + "x Pastry: $" + pastry.GetPrice(quantity));
+      Console.WriteLine("     Total: $" + (bread.GetPrice(loaves) + pastry.GetPrice(quantity)));
+      Console.WriteLine("--- -- - -- --- -- - -- --- -- - -- ---");
+      Console.WriteLine("Does everything on your order look correct? (Y / N)");
       string userInput = Console.ReadLine().ToUpper();
-      if (userInput == "BREAD") {
-        Console.WriteLine("How many loaves would you like?");
-        string stringQuanity = Console.ReadLine();
-        int quantity = int.Parse(stringQuanity);
-        Bread bread = new Bread(quantity);
-        Console.WriteLine(quantity + "x Bread: $" + bread.GetPrice(quantity));
-      } else if (userInput == "PASTRY") {
-        Console.WriteLine("How many pastries would you like?");
-        string stringQuanity = Console.ReadLine();
-        int quantity = int.Parse(stringQuanity);
-        Pastry pastry = new Pastry(quantity);
-        Console.WriteLine(quantity + "x Pastry: $" + pastry.GetPrice(quantity));
-      } else if (userInput == "VIEW" || userInput == "VIEW ORDER") {
-        foreach (Item element in Order) {
-        Console.WriteLine(element.GetQuantity);
-        Console.WriteLine("$" + element.GetPrice);
-        }
+      if (userInput == "Y") {
+        done = true;
+        Console.WriteLine("Thank you! Enjoy :)");
+      } else if (userInput == "N") {
+        // loop back re-enter loaves and pastries
       }
     }
   }
